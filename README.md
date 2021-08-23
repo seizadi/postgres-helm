@@ -19,3 +19,12 @@ POSTGRES_HOST=localhost POSTGRES_PORT=5432 POSTGRES_USER=postgres POSTGRES_PASSW
 ```
 
 You can change these values by providing custom values to helm install command.
+
+## Helm Github Repo
+Reference this blog for how to create a 
+[Github Helm Repo](https://medium.com/@mattiaperi/create-a-public-helm-chart-repository-with-github-pages-49b180dbb417)
+
+This is the helm command for this repo:
+```bash
+helm repo index --url https://seizadi.github.io/postgres-helm/ . 
+```

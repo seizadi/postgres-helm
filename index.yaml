@@ -1,0 +1,56 @@
+apiVersion: v1
+entries:
+  postgres:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-08-23T10:27:39.625551-07:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.4.5
+    description: A Helm chart for Kubernetes
+    digest: 0221f0135442b5d8a3a09e19dbd115f9a726e8c708d2888d904048cb8b75c6b4
+    maintainers:
+    - name: Soheil Eizadi
+      url: https://github.com/seizadi/postgres
+    name: postgres
+    type: application
+    urls:
+    - https://seizadi.github.io/postgres-helm/postgres-0.1.0.tgz
+    version: 0.1.0
+  postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 11.12.0
+    created: "2021-08-23T10:27:39.629787-07:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Chart for PostgreSQL, an object-relational database management system
+      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
+    digest: a721b111ce347da2584e23b9eba5c2a6e2171b4da5fcb09add54f46016141ffe
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://seizadi.github.io/postgres-helm/charts/postgresql-10.4.5.tgz
+    version: 10.4.5
+generated: "2021-08-23T10:27:39.620451-07:00"

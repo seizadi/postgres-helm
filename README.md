@@ -5,8 +5,9 @@ where a postgres database is needed.
 
 ## Installation
 ```bash
+helm repo add postgres-helm https://seizadi.github.io/postgres-helm/
 kubectl create namespace postgres
-helm install -n postgres postgres .
+helm install -n postgres postgres postgres-helm/postgres
 kubectl port-forward postgres-postgresql-0 5432:5432
 ```
 
